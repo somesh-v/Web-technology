@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Products</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        .header {
+            background: linear-gradient(90deg, #1428A0, #1E40AF);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+            background-color: #F0F0F0;
+        }
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .product-card h2 {
+            color: #1428A0;
+            margin: 20px 0;
+        }
+        .product-card p {
+            color: #333;
+            font-size: 18px;
+        }
+        .footer {
+            background-color: #1E40AF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .footer ul li {
+            margin: 0 10px;
+        }
+        .footer ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer ul li a:hover {
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        SAMSUNG PRODUCTS
+    </div>
+    <div class="container">
+        <div class="product-card">
+            <h2>Samsung Galaxy S21</h2>
+            <p>High performance and cutting-edge technology.</p>
+        </div>
+        <div class="product-card">
+            <h2>Samsung Galaxy Note 20</h2>
+            <p>Flagship phone with premium features and S Pen.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li>Follow us on:</li>
+            <li><a href="https://twitter.com/SamsungMobile">Twitter</a></li>
+            <li><a href="https://www.instagram.com/samsungmobile/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/SamsungMobile">Facebook</a></li>
+        </ul>
+    </div>
+</body>
+</html>

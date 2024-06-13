@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        .header {
+            background: linear-gradient(90deg, #1428A0, #1E40AF);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .nav {
+            background-color: #1E40AF;
+            overflow: hidden;
+        }
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul li {
+            padding: 14px 20px;
+        }
+        .nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .nav ul li a:hover {
+            color: #FFD700;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 40px;
+            background-color: #F0F0F0;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            flex: 1 1 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card h2 {
+            margin: 20px 0;
+            color: #1428A0;
+        }
+        .card p {
+            font-size: 18px;
+            color: #333;
+        }
+        .footer {
+            background-color: #1E40AF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .footer ul li {
+            margin: 0 10px;
+        }
+        .footer ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer ul li a:hover {
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        SAMSUNG
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a routerLink="product">Products</a></li>
+            <li><a routerLink="about">About</a></li>
+            <li><a routerLink="contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="card">
+            <h2>WORLD'S #1</h2>
+            <p>QUALITY SMARTPHONE BRAND</p>
+        </div>
+        <div class="card">
+            <h2>10 MILLION</h2>
+            <p>USERS WORLDWIDE</p>
+        </div>
+        <div class="card">
+            <h2>COPYRIGHTS © 2010-2022</h2>
+            <p>SAMSUNG. ALL RIGHTS RESERVED</p>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li>Follow us on:</li>
+            <li><a href="https://twitter.com/SamsungMobile">Twitter</a></li>
+            <li><a href="https://www.instagram.com/samsungmobile/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/SamsungMobile">Facebook</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<router-outlet />
