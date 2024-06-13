@@ -1,0 +1,70 @@
+.product-list {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping to ensure a single row */
+  gap: 16px;
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  justify-content: flex-start;
+}
+
+.product-card {
+  background-color: antiquewhite;
+  border: 1px solid #fd3c3c;
+  border-radius: 8px;
+  padding: 16px;
+  width: calc(20% - 32px); /* Adjust to display 5 products per row */
+  box-sizing: border-box;
+  text-align: center;
+  margin: 8px; /* Add margin for spacing */
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.product-card:hover {
+  background-color: #fff0e0; /* Lighten the background color */
+  border-color: #e63946; /* Change border color on hover */
+  transform: scale(1.05); /* Slightly enlarge the card */
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: filter 0.3s ease; /* Smooth transition */
+}
+
+.product-card:hover .product-image {
+  filter: brightness(1.1); /* Brighten the image */
+}
+
+.product-card h2 {
+  font-size: 1.5em;
+  margin: 8px 0;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.product-card:hover h2 {
+  color: #fd3c3c; /* Change text color on hover */
+}
+
+.product-card p {
+  margin: 8px 0;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.product-card:hover p {
+  color: #555; /* Change text color on hover */
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
